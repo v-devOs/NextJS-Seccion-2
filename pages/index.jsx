@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
+import { Navbar } from '@/components/Navbar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,6 +16,9 @@ export default function HomePage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
+      <Navbar />
+
       <main className={styles.main}>
       
 
@@ -38,11 +43,16 @@ export default function HomePage() {
         </div>
 
         <div className={styles.grid}>
-          <a
+          
+          <Link href={"/about"} className= {styles.card} replace>
+            
+            <h2 className={inter.className}>Ir a About</h2>
+          </Link>
+          {/* <a
             href="/about"
             className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
+            // target="_blank"
+            // rel="noopener noreferrer"
           >
             <h2 className={inter.className}>
               ir al about <span>-&gt;</span>
@@ -50,7 +60,7 @@ export default function HomePage() {
             <p className={inter.className}>
               Find in-depth information about Next.js features and&nbsp;API.
             </p>
-          </a>
+          </a> */}
 
           
         </div>
