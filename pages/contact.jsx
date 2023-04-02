@@ -8,13 +8,12 @@ const inter = Inter({ subsets: ['latin'] })
 export default function HomePage() {
   return (
     <MainLayout>
-      <div className='grid'>
+      
         <h2 className={inter.className}>Contact</h2>
         <Link href={"/"} className= 'card' replace>
           
           <h2 className={inter.className}>Ir a About</h2>
         </Link>
-      </div>
     </MainLayout>
   )
 }

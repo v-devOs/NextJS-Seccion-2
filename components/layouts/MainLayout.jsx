@@ -30,7 +30,11 @@ export const MainLayout = ({ children }) => {
           </div>
         </div>
 
-        { children }
+        <div className='grid'>
+
+          { children }
+        </div>
+
 
       </main>
     </>
