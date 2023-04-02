@@ -24,14 +24,7 @@ export default function HomePage() {
 
         <div className={styles.center}>
           <h1 className={inter.className}>Contact</h1>
-          {/* <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          /> */}
+          
           <div className={styles.thirteen}>
             <Image
               src="/thirteen.svg"
@@ -49,19 +42,7 @@ export default function HomePage() {
             
             <h2 className={inter.className}>Ir a About</h2>
           </Link>
-          {/* <a
-            href="/about"
-            className={styles.card}
-            // target="_blank"
-            // rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              ir al about <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a> */}
+          
 
           
         </div>

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 const styles = {
-  color: "blue",
+  color: "orange",
   textDecoration: 'underline'
 }
 export const ActiveLink = ({name, href}) => {
