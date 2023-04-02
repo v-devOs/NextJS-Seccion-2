@@ -5,12 +5,12 @@ const styles = {
   color: "orange",
   textDecoration: 'underline'
 }
-export const ActiveLink = ({name, href}) => {
+export const ActiveLink = ({text, href}) => {
   const {asPath} = useRouter();
 
   return (
     <Link href={href} style={ asPath == href ? styles : null} >
-      {name}
+      {text}
     </Link>
   )
 }
