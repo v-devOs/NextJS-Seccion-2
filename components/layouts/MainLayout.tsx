@@ -3,7 +3,7 @@ import { Navbar } from "../Navbar"
 import styles from './MainLayout.module.css'
 import Image from "next/image"
 
-export const MainLayout = ({ children }) => {
+export const MainLayout = ({ children } : { children : React.ReactNode}) => {
   return (
     <>
       <Head>

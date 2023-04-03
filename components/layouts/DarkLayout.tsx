@@ -1,5 +1,6 @@
 
-export const DarkLayout = ({children}) => {
+
+export const DarkLayout = ({ children } : {children: React.ReactNode}) => {
   return (
     <div style={{
       backgroundColor: '#252525',
