@@ -1,7 +1,7 @@
 import { FC, ReactNode } from "react"
 
 interface props{
-  children: JSX.Element
+  children: ReactNode
 }
 
 export const DarkLayout: FC<props> =  ({ children }) => {
